@@ -1,0 +1,111 @@
+/* 
+    TABLE OF CONTENTS
+    I. General
+
+    1. Home Page
+        a. down button
+        b. headshot image
+    2. About Me
+    3. Projects
+    4. Contact
+    5. Footer
+*/
+
+/* I General */
+::selection{
+    background-color: #fbbd7b;
+    color: black;
+}
+
+
+/* 1. HOME PAGE */
+#home-page {
+    height: 100vh;
+    background: #fff url("data:image/svg+xml,%3Csvg width='1280' height='433' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M0 0h1280L0 433z' fill='%237F7BFB' fill-rule='evenodd'/%3E %3C/svg%3E ") top/100% no-repeat;
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1143%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M1312.283%2c388.494C1342.428%2c386.742%2c1362.28%2c360.259%2c1376.628%2c333.689C1390.071%2c308.795%2c1396.958%2c280.253%2c1384.432%2c254.885C1370.41%2c226.486%2c1343.955%2c203.486%2c1312.283%2c203.373C1280.456%2c203.26%2c1254.958%2c226.693%2c1239.238%2c254.367C1223.74%2c281.649%2c1218.524%2c314.452%2c1233.531%2c342.008C1249.157%2c370.7%2c1279.667%2c390.39%2c1312.283%2c388.494' fill='rgba(127%2c 123%2c 251%2c 0.66)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M735.69%2c304.884C808.861%2c302.019%2c866.861%2c249.595%2c902.318%2c185.525C936.502%2c123.755%2c948.169%2c48.129%2c910.996%2c-11.89C875.372%2c-69.408%2c803.346%2c-83.312%2c735.69%2c-83.509C667.582%2c-83.708%2c596.683%2c-69.386%2c558.603%2c-12.918C516.078%2c50.14%2c507.8%2c133.082%2c544.821%2c199.521C582.735%2c267.562%2c657.859%2c307.931%2c735.69%2c304.884' fill='rgba(127%2c 123%2c 251%2c 0.66)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M82.256%2c1293.122C159.677%2c1299.962%2c242.274%2c1274.003%2c282.159%2c1207.295C322.877%2c1139.194%2c307.516%2c1053.415%2c266.013%2c985.789C226.535%2c921.462%2c157.724%2c882.584%2c82.256%2c881.563C4.882%2c880.516%2c-75.845%2c911.421%2c-110.318%2c980.699C-142.346%2c1045.063%2c-102.31%2c1115.461%2c-64.587%2c1176.661C-29.453%2c1233.662%2c15.557%2c1287.229%2c82.256%2c1293.122' fill='rgba(127%2c 123%2c 251%2c 0.66)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M200.901%2c1102.323C280.796%2c1102.29%2c368.716%2c1095.548%2c411.946%2c1028.359C457.917%2c956.909%2c445.881%2c863.139%2c401.343%2c790.787C358.941%2c721.906%2c281.786%2c685.144%2c200.901%2c685.517C120.708%2c685.887%2c45.702%2c724.346%2c3.635%2c792.621C-40.656%2c864.505%2c-55.805%2c957.319%2c-10.445%2c1028.533C32.521%2c1095.988%2c120.924%2c1102.356%2c200.901%2c1102.323' fill='rgba(127%2c 123%2c 251%2c 0.66)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1035.151%2c83.331C1062.838%2c84.513%2c1092.954%2c77.329%2c1106.641%2c53.233C1120.213%2c29.338%2c1109.567%2c0.721%2c1095.472%2c-22.869C1081.839%2c-45.687%2c1061.726%2c-65.862%2c1035.151%2c-66.421C1007.753%2c-66.997%2c983.31%2c-49.605%2c970.272%2c-25.501C957.843%2c-2.523%2c960.124%2c25.112%2c973.501%2c47.551C986.541%2c69.425%2c1009.708%2c82.245%2c1035.151%2c83.331' fill='rgba(127%2c 123%2c 251%2c 0.66)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M333.216%2c694.28C416.02%2c693.069%2c487.889%2c641.864%2c528.787%2c569.854C569.149%2c498.787%2c577.815%2c409.996%2c533.777%2c341.146C492.417%2c276.482%2c409.946%2c266.234%2c333.216%2c264.093C250.941%2c261.797%2c157.628%2c260.695%2c112.28%2c329.383C63.699%2c402.969%2c81.808%2c500.297%2c127.477%2c575.724C171.416%2c648.293%2c248.391%2c695.521%2c333.216%2c694.28' fill='rgba(127%2c 123%2c 251%2c 0.66)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1143'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e"); */  
+}
+
+.home-row{
+    min-height: 90vh;
+    max-height: auto;
+    padding-top: 100px;
+}
+
+/* Next page "down arrow" */
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 2;
+    background-color: #7F7BFB;
+    opacity: 0.4;
+    transition: 0.25s;
+}
+
+.btn-circle.btn-xl:hover{
+    opacity: 0.7;
+}
+
+/* Headshot image */
+.rounded-circle {
+    border: 5px solid #7F7BFB;
+}
+
+/* 2. ABOUT PAGE */
+#about-page{
+    background-color: #7F7BFB;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* 3. PROJECTS PAGE */
+#projects-page{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.project-btn{
+    background-color: #7F7BFB;
+    transition: 0.25s;
+}
+
+.project-btn:hover{
+    color: white;
+    filter: brightness(92%);
+}
+
+/* 4. CONTACT PAGE */
+#contact-page{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1245%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c87 C 96%2c70.6 288%2c2.2 480%2c5 C 672%2c7.8 768%2c91.4 960%2c101 C 1152%2c110.6 1248%2c50.2 1440%2c53 C 1632%2c55.8 1824%2c102.6 1920%2c115L1920 1080L0 1080z' fill='rgba(127%2c 123%2c 251%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c145 C 96%2c153.8 288%2c193.8 480%2c189 C 672%2c184.2 768%2c112.4 960%2c121 C 1152%2c129.6 1248%2c232 1440%2c232 C 1632%2c232 1824%2c143.2 1920%2c121L1920 1080L0 1080z' fill='rgba(127%2c 123%2c 251%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c332 C 64%2c318.2 192%2c266 320%2c263 C 448%2c260 512%2c320.4 640%2c317 C 768%2c313.6 832%2c237.6 960%2c246 C 1088%2c254.4 1152%2c357.4 1280%2c359 C 1408%2c360.6 1472%2c261.4 1600%2c254 C 1728%2c246.6 1856%2c308.4 1920%2c322L1920 1080L0 1080z' fill='rgba(127%2c 123%2c 251%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c425 C 55%2c419.2 165%2c394.2 275%2c396 C 385%2c397.8 440%2c436.2 550%2c434 C 660%2c431.8 715%2c376.6 825%2c385 C 935%2c393.4 990%2c470.4 1100%2c476 C 1210%2c481.6 1265%2c418.2 1375%2c413 C 1485%2c407.8 1541%2c459.4 1650%2c450 C 1759%2c440.6 1866%2c382.8 1920%2c366L1920 1080L0 1080z' fill='rgba(127%2c 123%2c 251%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c497 C 384%2c510.6 1536%2c551.4 1920%2c565L1920 1080L0 1080z' fill='rgba(127%2c 123%2c 251%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c664 C 384%2c657.8 1536%2c639.2 1920%2c633L1920 1080L0 1080z' fill='rgba(127%2c 123%2c 251%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c757 C 128%2c772.2 384%2c833.8 640%2c833 C 896%2c832.2 1024%2c753.4 1280%2c753 C 1536%2c752.6 1792%2c815.4 1920%2c831L1920 1080L0 1080z' fill='rgba(127%2c 123%2c 251%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c925 C 128%2c910.8 384%2c851.8 640%2c854 C 896%2c856.2 1024%2c937 1280%2c936 C 1536%2c935 1792%2c866.4 1920%2c849L1920 1080L0 1080z' fill='rgba(127%2c 123%2c 251%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c1058 C 192%2c1044.8 576%2c987.8 960%2c992 C 1344%2c996.2 1728%2c1061.6 1920%2c1079L1920 1080L0 1080z' fill='rgba(127%2c 123%2c 251%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1245'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/* social media buttons */
+.social-button{
+    background-color: #212529;
+    opacity: 0.7;
+    font-size: 1.5em;
+    transition: 0.25s;
+    outline: none !important;
+}
+
+.social-button:hover{
+    opacity: 1;
+}
+
+.white, .white a {
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.25s;
+}
+
+a:hover{
+    color: #fbbd7b
+}
